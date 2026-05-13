@@ -9,25 +9,23 @@ export const Hero = () => {
       
       {/* Pulsing Radial Glows */}
       <motion.div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#FF2D7822] blur-[120px]"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#FF2D7822] blur-[80px]"
         animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.3, 0.5, 0.3]
+          opacity: [0.3, 0.4, 0.3]
         }}
         transition={{
-          duration: 4,
+          duration: 8,
           repeat: Infinity,
           ease: "easeInOut"
         }}
       />
       <motion.div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#00F0FF11] blur-[80px]"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-[#00F0FF11] blur-[60px]"
         animate={{
-          scale: [1.2, 1, 1.2],
-          opacity: [0.2, 0.4, 0.2]
+          opacity: [0.2, 0.3, 0.2]
         }}
         transition={{
-          duration: 5,
+          duration: 10,
           repeat: Infinity,
           ease: "easeInOut"
         }}
@@ -80,7 +78,7 @@ export const Hero = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          style={{ filter: 'drop-shadow(var(--shadow-glow-pink))' }}
+          style={{ textShadow: 'var(--shadow-glow-pink)' }}
         >
           KUCHNIA SZEFÓW
           <span className="absolute inset-0 text-[#00F0FF] opacity-0 group-hover:opacity-50 group-hover:animate-glitch-1 pointer-events-none" aria-hidden="true" style={{ clipPath: 'inset(40% 0 61% 0)' }}>KUCHNIA SZEFÓW</span>
@@ -94,7 +92,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           style={{ textShadow: 'var(--shadow-glow-blue)' }}
         >
-          Miami Vibes Street Food
+          FOOD TRUCK
         </motion.p>
         
         <motion.div 

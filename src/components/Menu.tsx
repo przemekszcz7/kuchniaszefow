@@ -60,7 +60,7 @@ export const Menu = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl mb-4 text-neon-pink" style={{ filter: 'drop-shadow(var(--shadow-glow-pink))' }}>
+          <h2 className="font-display text-4xl md:text-5xl mb-4 text-neon-pink" style={{ textShadow: 'var(--shadow-glow-pink)' }}>
             MENU
           </h2>
           <div className="h-1 w-24 bg-neon-pink mx-auto rounded-full shadow-[var(--shadow-glow-pink)]" />

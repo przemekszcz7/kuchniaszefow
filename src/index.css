@@ -16,9 +16,9 @@
   --color-neon-yellow: #FFE600;
   --color-neon-green: #00FF9F;
 
-  --shadow-glow-pink: 0 0 10px #FF2D78, 0 0 30px #FF2D78, 0 0 60px #FF2D7855;
-  --shadow-glow-blue: 0 0 10px #00F0FF, 0 0 30px #00F0FF, 0 0 60px #00F0FF55;
-  --shadow-glow-purple: 0 0 10px #BF00FF, 0 0 30px #BF00FF, 0 0 60px #BF00FF55;
+  --shadow-glow-pink: 0 0 10px #FF2D78, 0 0 40px #FF2D7855;
+  --shadow-glow-blue: 0 0 10px #00F0FF, 0 0 40px #00F0FF55;
+  --shadow-glow-purple: 0 0 10px #BF00FF, 0 0 40px #BF00FF55;
 }
 
 @layer base {
@@ -49,16 +49,10 @@
     height: 100%;
     background: linear-gradient(
       rgba(18, 16, 16, 0) 50%,
-      rgba(0, 0, 0, 0.25) 50%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(255, 0, 0, 0.06),
-      rgba(0, 255, 0, 0.02),
-      rgba(0, 0, 255, 0.06)
+      rgba(0, 0, 0, 0.1) 50%
     );
     z-index: 10;
-    background-size: 100% 4px, 3px 100%;
+    background-size: 100% 4px;
     pointer-events: none;
   }
 

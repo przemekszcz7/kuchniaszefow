@@ -33,7 +33,7 @@ export const Reviews = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             className="font-display text-4xl md:text-5xl mb-4 text-neon-blue"
-            style={{ filter: 'drop-shadow(var(--shadow-glow-blue))' }}
+            style={{ textShadow: 'var(--shadow-glow-blue)' }}
           >
             OPINIE GOŚCI
           </motion.h2>
